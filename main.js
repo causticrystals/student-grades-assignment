@@ -71,7 +71,7 @@ function addRandomGrade() {
 
 function removeLastGrade() {
   // Remove the last grade.
-  grades.splice(0, 1);
+  grades.pop();
   outputEl.innerHTML = "Remove the last grade";
 }
 
