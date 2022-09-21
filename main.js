@@ -65,11 +65,13 @@ function randomTo100() {
 
 function addRandomGrade() {
   // Add a random grade between 0 and 100 to the end of the array.
+  grades.splice(0, 0, Math.random() * 100);
   outputEl.innerHTML = "Add random grade";
 }
 
 function removeLastGrade() {
   // Remove the last grade.
+  grades.splice(0, 1);
   outputEl.innerHTML = "Remove the last grade";
 }
 
