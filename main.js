@@ -50,16 +50,19 @@ function mainMenu() {
 // ******************************************************
 function firstTo40() {
   // Set the grade of the first student to 40.
+  grades[0] = 40;
   outputEl.innerHTML = "First grade to 40";
 }
 
 function lastTo50() {
   // Set the grade of the last student to 50.
+  grades[grades.length - 1] = 50;
   outputEl.innerHTML = "Last grade to 50";
 }
 
 function randomTo100() {
   // Set the grade of a random student to 100.
+  grades[randomInt(0, grades.length + 1)] = 100;
   outputEl.innerHTML = "Random grade to 100";
 }
 
